@@ -41,5 +41,8 @@
       "import": "./dist/index.js",
       "default": "./dist/index.cjs"
     }
+  },
+  "engines": {
+    "pnpm": "9.x"
   }
 }
