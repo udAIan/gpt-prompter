@@ -1,0 +1,23 @@
+{
+  "name": "gpt-prompter",
+  "version": "0.0.1",
+  "description": "Developer utilities for prompt engineering",
+  "keywords": [
+    "gpt",
+    "typescript"
+  ],
+  "homepage": "https://github.com/strada-api/gpt-prompter",
+  "bugs": {
+    "url": "https://github.com/strada-api/gpt-prompter/issues"
+  },
+  "author": "Udayan Maurya <udayan@getstrada.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strada-api/gpt-prompter.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT"
+}
