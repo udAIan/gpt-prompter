@@ -25,8 +25,9 @@
     "check-format": "prettier --check .",
     "format": "prettier --write .",
     "check-exports": "attw --pack .",
+    "lint": "tsc",
     "build": "tsup",
-    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports"
+    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.0",
