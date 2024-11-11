@@ -6,6 +6,7 @@
     "gpt",
     "typescript"
   ],
+  "main": "dist/index.js",
   "homepage": "https://github.com/strada-api/gpt-prompter",
   "bugs": {
     "url": "https://github.com/strada-api/gpt-prompter/issues"
@@ -23,10 +24,12 @@
   "scripts": {
     "check-format": "prettier --check .",
     "format": "prettier --write .",
+    "check-exports": "attw --pack .",
     "build": "tsc",
-    "ci": "npm run build && npm run check-format"
+    "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3"
   }
