@@ -29,11 +29,13 @@
     "build": "tsup",
     "ci": "pnpm run build && pnpm run check-format && pnpm run check-exports && pnpm run lint",
     "local-release": "changeset version && changeset publish",
-    "prepublishOnly": "pnpm run ci"
+    "prepublishOnly": "pnpm run ci",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.0",
     "@changesets/cli": "^2.27.9",
+    "husky": "^9.1.6",
     "prettier": "^3.3.3",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
