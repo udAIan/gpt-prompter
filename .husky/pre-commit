@@ -1,0 +1,13 @@
+#!/bin/sh
+# Check that no sensetive secrets are commited
+gitleaks protect --staged || exit $?
+
+# No commits to main
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+protected_branch="main"
+
+if [ "$current_branch" = "$protected_branch" ]; then
+  echo "You cannot commit directly to the $protected_branch branch!"
+  echo "Please create a new branch and commit your changes there."
+  exit 1
+fi
