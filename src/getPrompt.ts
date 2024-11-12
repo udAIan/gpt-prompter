@@ -1,4 +1,4 @@
-import { prompter } from "../host/src/prompt.gen";
+import { prompter } from '../host/src/prompt.gen';
 
 type PrompterObj = typeof prompter;
 
