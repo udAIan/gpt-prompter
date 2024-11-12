@@ -1,6 +1,9 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const directoryPath = path.join(__dirname, '../host/src');
 const outputFilePath = path.join(directoryPath, 'prompt.gen.ts');
 
