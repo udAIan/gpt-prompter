@@ -51,5 +51,11 @@
   },
   "engines": {
     "pnpm": "9.x"
+  },
+  "bin": {
+    "prompter": "dist/cli/index.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
   }
 }
