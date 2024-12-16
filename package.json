@@ -53,7 +53,7 @@
     "pnpm": "9.x"
   },
   "bin": {
-    "prompter": "./src/cli/index.js"
+    "prompter": "dist/cli/index.js"
   },
   "dependencies": {
     "commander": "^12.1.0"

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { Command } from 'commander';
 const program = new Command();
 
@@ -9,7 +7,7 @@ program
   .command('greet <name>')
   .description('Greets a user')
   .action((name) => {
-    console.log(`Hello, ${name}!`);
+    console.log(`Hello, world ${name}!`);
   });
 
 program.parse();
