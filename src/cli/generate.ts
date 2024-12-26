@@ -29,12 +29,28 @@ export const generate = async () => {
     }
 
     // Generate TypeScript file content
-    const fileContent = `// This file is auto-generated. Do not edit directly.
+    const fileContent = `
+/* prettier-ignore-start */
+
+/* eslint-disable */
+
+// @ts-nocheck
+
+// noinspection JSUnusedGlobalSymbols
+
+// This file is auto-generated. Do not edit directly.
 
 export const gptPrompts = ${JSON.stringify(prompts, null, 2)} as const;
 
+// Type local
+type GptPromptsLocal = typeof gptPrompts;
+
 // Type definition for the prompts
-export type GptPrompts = typeof gptPrompts;
+declare module 'gpt-prompter' {
+  interface GptPrompts extends GptPromptsLocal {}
+}
+
+/* prettier-ignore-end */
 `;
 
     // Write the file
